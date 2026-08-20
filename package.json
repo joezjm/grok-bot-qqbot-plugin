@@ -1,0 +1,36 @@
+{
+  "name": "grok-bot-qqbot-plugin",
+  "version": "1.0.0",
+  "description": "Cursor / Grok Bot plugin: QQ Bot MCP server via @tencent-connect/qqbot-nodejs",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "qqbot-mcp": "./dist/server.js"
+  },
+  "main": "./dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "start": "node dist/server.js",
+    "test": "node --import tsx --test tests/bot.test.ts tests/server.test.ts"
+  },
+  "keywords": ["qqbot", "qq", "mcp", "cursor", "grok-bot"],
+  "author": "joezjm",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joezjm/grok-bot-qqbot-plugin.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "@tencent-connect/qqbot-nodejs": "^1.0.4",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "qqbot",
+  "displayName": "QQ Bot",
+  "version": "1.0.0",
+  "description": "QQ Bot MCP server for Cursor / Grok Bot, using @tencent-connect/qqbot-nodejs only.",
+  "author": { "name": "joezjm" },
+  "license": "MIT",
+  "mcpServers": "./mcp.json",
+  "skills": "./skills/",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "QQBOT_APP_ID": {
+        "type": "string",
+        "title": "QQ Bot App ID",
+        "description": "AppID from https://q.qq.com (QQ Open Platform)"
+      },
+      "QQBOT_APP_SECRET": {
+        "type": "string",
+        "title": "QQ Bot App Secret",
+        "description": "AppSecret from https://q.qq.com (QQ Open Platform)"
+      }
+    },
+    "required": ["QQBOT_APP_ID", "QQBOT_APP_SECRET"]
+  }
+}
